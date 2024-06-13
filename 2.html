@@ -1,0 +1,75 @@
+<!-- List in HTML -->
+
+<html>
+    <head>
+        <title>HTML List</title>
+        <style>
+            /* Internal css */
+            h2{
+                color: blue;
+            }
+            body{
+                background-color: azure;
+            }
+
+            ol{
+                list-style-type:lower-alpha;
+                /*list-style-type: upper-roman;*/
+            }
+
+            ul{
+                list-style-type: square;
+            }
+
+            .a{
+                list-style-type: lower-roman;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <!-- Unodered List -->
+        <h2>Unordered List</h2>
+        <ul>
+            <li> car </li>
+            <li> van </li>
+            <li> bike </li>
+        </ul>
+
+        <!-- Ordered List -->
+        <h2>Ordered List</h2>
+        <ol class="a">
+            <li> car </li>
+            <li> van </li>
+            <li> bike </li>
+        </ol>
+
+        <!-- <dl>  - specifies a definition list
+        <dt> - specifies each term
+        <dd> -specifies each term definition-->
+
+        <h2>Definition List</h2>    
+        <dl>
+            <dt> Coffee </dt>
+            <dd> Black drink </dd>
+            <dd>Milk</dd> 
+
+            <dt> Milk </dt>
+            <dd> White drink </dd>
+        </dl>
+        
+        <!--Nested list-->
+        <h2>Nested List </h2>
+        <ul>
+            <li> car </li>
+            <li> van </li>
+            <li> bike </li>
+            <ol>
+                <li> car </li>
+                <li> van </li>
+                <li> bike </li>
+            </ol>
+            <li>car</li>
+        </ul>
+    </body>
+</html>
