@@ -1,0 +1,58 @@
+h1,h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,th,td{
+    border: 2px solid;
+    border-color: blue;
+}
+
+
+th,td {
+    padding: 5px;
+}
+
+.a{
+    background-color: aqua;
+}
+
+.b{
+    background-color: lightblue;
+}
+
+.c{
+    background-color: antiquewhite;
+}
+
+.d{
+    background-color: aquamarine;
+}
+
+.e{
+    background-color: rgb(163, 163, 251);
+}
+
+.f{
+    font-weight: bold;
+}
+
+.g{
+    font-style: italic;
+}
+
+.h{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.i{
+    font-size: 12px;
+}

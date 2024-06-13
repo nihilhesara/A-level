@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <form action="mailto:nihilhesa@gmail.com" method="get">
+        <fieldset>
+            <legend>Bio data form</legend>
+        <label for="fname">First Name : </label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your first name"> <br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email"> <br><br>
+
+        <label for="password">password: </label>
+        <input type="password" name="password" id="password" size="8" maxlength="8"> <br><br>
+
+        <label for="Degree">Degree : </label>
+        <select name="Degree" id="Degree">
+            <option value="SE">SE</option>
+            <option value="CS">CS</option>
+            <option value="AIDS">AIDS</option>
+        </select> <br><br>
+
+        <label for="Levels">Levels : </label> <br><br>
+        
+        <input type="radio" name="Levels" id="L4"> Level 4
+        <input type="radio" name="Levels" id="L5"> Level 5
+        <input type="radio" name="Levels" id="L6"> Level 6 <br><br>
+
+        <label for="Modules">Modules : </label>  
+        
+        <input type="checkbox" name="web" id="web" checked> 
+        <label for="Web">Web</label>
+        <input type="checkbox" name="tcs" id="tcs"> 
+        <label for="tcs">TCS</label>
+        <input type="checkbox" name="web" id="web"> 
+        <label for="Web">Java</label> <br><br>
+
+        <label for="dob">Date of birth : </label>
+        <input type="date" name="dob" id="dob" value="1990-01-01"><br><br>
+
+        <label for="feedback">Feedback : </label>
+        <textarea name="feddback" id="feedback" cols="30" rows="5"></textarea> <br><br>
+
+        <label for="Volume">Volume : </label>
+        <input type="range" name="volume" id="volume"> <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
