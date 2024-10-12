@@ -10,4 +10,4 @@ for i in range(1,11):
         even_list.append(number)
 
 print("Odd List is = ",odd_list)
-print("Even List is = ",even_list)
+print(f"Even List is = {even_list}")
