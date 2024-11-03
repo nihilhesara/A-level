@@ -173,3 +173,12 @@ SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', MIN(salary), deptNo FROM
 -- minimum salary of every department the salary that less than 4500 
 SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', MIN(salary), deptNo FROM emp WHERE salary <= 4500 GROUP BY deptNo ;
 
+--______________________________________________________________________________________________________________________
+
+-- JOIN TABLES
+
+-- TableName.FieldName
+SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', dName FROM emp JOIN dept ON dept.deptNo = emp.deptNo;
+
+-- Changethe name of both tables
+SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', dName FROM e JOIN dept AS d ON d.deptNo = e.deptNo;
