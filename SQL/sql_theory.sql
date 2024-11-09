@@ -77,6 +77,8 @@ VALUES
 (761, 'Move Phone', 'M Phone 32', '2021-05-07', 1241.00, 'Crashes', 103),
 (762, 'Move Laptop', 'M Laptop 3223', '2021-05-08', 1678.00, NULL, 103);
 
+--____________________________________________________________________________
+
 -- to update a table
 UPDATE dept 
 SET dLoc = 'Wellawatta'

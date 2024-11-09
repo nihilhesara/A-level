@@ -20,7 +20,7 @@ CREATE TABLE library(
     bookName VARCHAR(20),
     studentNo INT(4),
     PRIMARY KEY (libraryNo),
-    FOREIGN KEY (studentNo) REFERENCES studentinfo(studentNo)
+    FOREIGN KEY (studentNo) REFERENCES studentinfo(studentNo) -- Foreign key
 );
 
 INSERT INTO library

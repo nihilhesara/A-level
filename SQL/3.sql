@@ -67,7 +67,7 @@ VALUES
 (4,2001,3000),
 (5,3001,9999);
 
--- Tutorial - 09
+-- Tutorial - 09 (CRUD - Create Read Update Delete)
 
 SELECT * FROM EMP_Table; -- Selecting from a table
 
