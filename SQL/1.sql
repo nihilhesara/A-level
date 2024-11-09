@@ -1,3 +1,6 @@
+/* Create a table and insert values 
+http://localhost/phpmyadmin/index.php?route=/ */
+
 CREATE DATABASE system;
 
 CREATE TABLE table01
