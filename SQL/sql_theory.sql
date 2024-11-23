@@ -79,6 +79,8 @@ VALUES
 
 --____________________________________________________________________________
 
+-- NOT AND OR runs in this order not gets the most priority
+
 -- to update a table
 UPDATE dept 
 SET dLoc = 'Wellawatta'
@@ -148,7 +150,7 @@ MAX
 SUM
 AVG
 COUNT
-CONCAT
+CONCAT - merging two coloums into a one coloum
 
 */
 
@@ -169,7 +171,7 @@ SELECT MIN(salary) AS 'Minimum Salary' FROM emp;
 -- maximum salary
 SELECT MAX(salary) AS 'Minimum Salary' FROM emp;
 
--- minimum salary of every department
+-- minimum salary of every department (Group By departmentNo - output shows everyones empId Full name group everyone )
 SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', MIN(salary), deptNo FROM emp GROUP BY deptNo; -- multiple mathamatical conditions group as a one
 
 -- minimum salary of every department the salary that less than 4500 
@@ -177,9 +179,10 @@ SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', MIN(salary), deptNo FROM
 
 --______________________________________________________________________________________________________________________
 
--- JOIN TABLES
+-- JOIN TABLES (Inner join, Outer join, Self join) default one INNER JOIN gives the subset
+-- OUTER JOIN (Left join, Right join, Full join)
 
--- TableName.FieldName
+-- TableName.FieldName (From employee table join department table On departmenttables.departmentNo to employeeTable departmentNo)
 SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', dName FROM emp JOIN dept ON dept.deptNo = emp.deptNo;
 
 -- Changethe name of both tables

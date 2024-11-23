@@ -68,3 +68,14 @@ VALUES
 ('ST002','C01',60), 
 ('ST002','C02',70),  
 ('ST002','C03',75) 
+
+--__________________________________________________________
+
+-- select from a table
+SELECT * FROM city;
+
+-- sort in asending order
+SELECT * FROM marks ORDER BY Marks;
+
+-- sort in decending order
+SELECT * FROM marks ORDER BY Marks DESC;
