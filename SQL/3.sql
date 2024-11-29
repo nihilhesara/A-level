@@ -101,3 +101,17 @@ WHERE HIREDATE > '1983-12-31';
 
 SELECT ENAME,JOB FROM EMP_Table -- Q12
 WHERE JOB ='CLERK' AND DEPTNO = 20;
+
+-- ____________________________________________________
+
+-- to update a table
+UPDATE dept 
+SET dLoc = 'Wellawatta'
+WHERE deptNo = '30'
+
+-- to delete specific data row
+DELETE FROM dept 
+WHERE dName = 'Foundation'
+
+-- add a column to a existing table
+ALTER TABLE Emp ADD mgId int;
