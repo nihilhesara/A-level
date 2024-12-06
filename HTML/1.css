@@ -1,0 +1,18 @@
+h1,h2,h3 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+body {
+    background-color: rgb(136, 167, 204);
+}
+
+p{
+    color: aliceblue;
+}
+

@@ -187,3 +187,15 @@ SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', dName FROM emp JOIN dept
 
 -- Changethe name of both tables
 SELECT empId, CONCAT(fName, ' ', lName) AS 'Full Name', dName FROM e JOIN dept AS d ON d.deptNo = e.deptNo;
+
+SELECT employee_id, CONCAT(fName, ' ', lName) AS 'FullName' E.department_id, department_name FROM department AS D INNER JOIN employee AS E ON D.department_id = E.departemnt_i
+
+SELECT employee_id, CONCAT(fName, ' ', lName) AS 'FullName' E.department_id, department_name FROM department AS D LEFT OUTER JOIN employee AS E ON D.department_id = E.departemnt_id;
+
+SELECT employee_id, CONCAT(fName, ' ', lName) AS 'FullName' E.department_id, department_name FROM department AS D RIGHT OUTER JOIN employee AS E ON D.department_id = E.departemnt_id;
+
+-- Sub Queries with one value (use relational operators (=,>,<))
+SELECT employee_id,first_name,salary FROM employee WHERE salary > (SELECT salary FROM employee WHERE first_name = 'Mike');
+
+-- Sub Queries with more than one value (IN, ALL, ANY operator)
+SELECT employee_id,first_name,salary FROM employee WHERE salary IN (SELECT salary FROM employee WHERE first_name LIKE '%m');
