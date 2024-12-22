@@ -5,7 +5,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 #___________________________________________________________
 
-# Read to a file
+'''# Read to a file
 
 with open("demo.txt", "r") as f:
     print(f.read())
@@ -17,7 +17,7 @@ with open("demo.txt", "r") as f:
 
 f = open("demofile.txt", "w")
 f.write("Writing on a new file")
-f.close()
+f.close()'''
 
 """Don't create demofile.txt it creates autoatically with the write mode"""
 
@@ -26,5 +26,5 @@ f.close()
 # Append to a file
 
 with open("demo.txt", "a") as f:
-    f.write("Now thw file has more content")
+    f.write("\nNow the file has more content")
     f.close()

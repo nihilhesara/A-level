@@ -10,6 +10,6 @@ f = open("demo.txt", "r")
 
 # Method - 02
 
-with open (demo.txt, "r") as f:
+with open ("demo.txt", "r") as f:
 
 #___________________________________________________________
